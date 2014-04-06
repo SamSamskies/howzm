@@ -1,0 +1,47 @@
+body {
+	/*background: url(../img/hawaiiocean01.jpg) center top no-repeat;*/
+	background: #FAFAFA;
+	margin: 0 auto;
+	width: 100%;
+	font-family: 'Helvetica Neue', sans-serif;
+	 -webkit-font-smoothing: antialiased;
+	 font-size: 16px;
+	 padding-top: 200px;
+}
+.topnav {
+	background: url(../img/navbar.jpg) center top no-repeat; 
+	background-size: cover;
+	margin: 0;
+	height: 200px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+h1 {
+	text-align: center;
+	margin: auto 0;
+	padding-top: 40px;
+	letter-spacing: 5px;
+	color: black;
+	font-size: 60px;
+}
+.text-messaging {
+	max-width: 600px;
+	margin: 0 auto;
+	padding-top: 80px;
+}
+.howzm-box {
+	border-radius: 5px 20px 5px;
+	box-shadow: 0 0 5px rgba(0,0,0,.5);
+	border: 1px solid #6fa0a5;
+	max-width: 200px;
+	min-height: 50px;
+	display: inline-block;
+
+}
+.avatar {
+	width: 80px;
+	display: inline-block;
+	vertical-align: bottom;
+}
