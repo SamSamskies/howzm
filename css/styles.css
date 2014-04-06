@@ -49,6 +49,30 @@ h1 {
 	vertical-align: bottom;
 	padding-right: 10px;
 }
+.raccoon {
+	vertical-align: middle;
+}
+.bottomnav {
+	background: #fa602a;
+	width: 100%;
+	min-height: 150px;
+	position: fixed;
+	bottom: 0;
+}
 .inputbox {
-	background: 
+	position: fixed;
+	bottom: 0;
+	z-index: 1;
+	font-family: 'Sofadi One', cursive;
+	padding-bottom: 30px;
+}
+#new {
+	display: inline-block;
+	vertical-align: top;
+}
+#newRequest {
+	padding: 10px;
+}
+textarea {
+	resize: none;
 }
