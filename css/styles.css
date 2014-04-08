@@ -75,4 +75,18 @@ h1 {
 }
 textarea {
 	resize: none;
+	border-radius: 5px;
+	border: 0;
+}
+#send {
+	border: 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	background: black;
+	color: #fa602a;
+	display: inline-block;
+	text-align: center;
+	padding: 12px;
+	width: 100px;
+	margin-left: 10px;
 }
