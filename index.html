@@ -4,31 +4,47 @@
 	<meta charset="UTF-8">
 	<title>howzm</title>
 	<link href='http://fonts.googleapis.com/css?family=Sofadi+One' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css"/>	
 	<link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
-	<div class="topnav">
-		<h1 class="nav-bar">HOWZM?</h1>
-	</div>
-	<div class="text-messaging">
-		<div class="rooster">
-			<img class="avatar" src="img/rooster.png">
-			<div class="howzm-box">howzm? brah, whatchulike translate?
+	<div id="app">
+		<div class="topnav">
+			<h1 class="nav-bar">HOWZM?</h1>
+		</div>
+		<div class="text-messaging">
+			<div class="rooster">
+				<img class="avatar" src="img/rooster.png">
+				<div class="howzm-box">howzm? brah, whatchulike translate?
+				</div>
+			</div>
+			<div class="translations">
+				<div class="question-rac">
+				</div>
+				<div class="answer-roost">
+				</div>
+			</div>
+			
+		</div>
+		<div class="bottomnav">
+			<div class="inputbox">
+				<img class="avatar raccoon" src="img/raccoon.png">
+				<form id="new">
+					<textarea rows="4" cols="44" type="text" id="newRequest" placeholder="Not working yet. Come back later!"></textarea>
+				<form>
+				<button id="send">Send</button>
+				<ul class="socialicons">Share
+					<li><i class="fa fa-twitter"></i></li>
+					<li><i class="fa fa-facebook"></i></li>
+				</ul>
 			</div>
 		</div>
-		<div class="inputbox">
-			<img class="avatar raccoon" src="img/raccoon.png">	
-			<form id="new">
-				<textarea rows="4" cols="44" type="text" id="newRequest" placeholder="Not working yet. Come back later!"></textarea>
-				<button id="send">Send</button>
-			<form>
-		</div>
 	</div>
-	<div class="bottomnav">
-	</div>
-
-</body>
+	<footer>
+		<p>Developed by Sam Samskies</p>
+	</footer>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
+</body>
 </html>
