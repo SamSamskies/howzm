@@ -38,7 +38,7 @@ h1 {
 .text-messaging {
 	max-width: 600px;
 	margin: 0 auto;
-	padding-top: 80px;
+	padding: 80px 10px 0 10px;
 }
 .avatar {
 	width: 80px;
@@ -58,8 +58,26 @@ h1 {
 	/*background-image: linear-gradient(white, #c5dee2);*/
 }
 .translations {
-	padding: 10px;
+	visibility: hidden;
 	min-height: 300px;
+	list-style: none;
+	padding: 0;
+}
+.question-rac {
+	float: right;
+	display: inline;
+	padding-bottom: 30px;
+}
+.question-rac img {
+	padding-right: 0;
+	padding-left: 10px;
+}
+.question-rac .howzm-box {
+	background-color: #cbb96e;
+	border-radius: 20px 5px 20px;
+}
+.answer-roost {
+	clear: both;
 }
 .bottomnav {
 	background: #fa602a;
@@ -115,9 +133,9 @@ h1 {
 	margin: 0;
 	padding: 0;
 	width: 140px;
+	list-style: none;
 }
 .socialicons li {
-	list-style: none;
 	display: inline;
 	padding: 0 5px;
 	font-size: 24px;
