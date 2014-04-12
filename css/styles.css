@@ -38,7 +38,7 @@ h1 {
 .text-messaging {
 	max-width: 600px;
 	margin: 0 auto;
-	padding: 60px 10px 0 10px;
+	padding: 60px 10px 20px 10px;
 }
 .avatar {
 	width: 80px;
@@ -58,7 +58,6 @@ h1 {
 	/*background-image: linear-gradient(white, #c5dee2);*/
 }
 .translations {
-	visibility: hidden;
 	min-height: 200px;
 	list-style: none;
 	padding: 0;

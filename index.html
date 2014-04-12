@@ -14,19 +14,13 @@
 			<h1 class="nav-bar">HOWZM?</h1>
 		</div>
 		<div class="text-messaging">
-			<div class="rooster">
-				<img class="avatar" src="img/rooster.png">
-				<div class="howzm-box">howzm? brah, whatchulike translate?
-				</div>
-			</div>
 			<ul class="translations">
-				<li class="question-rac">
-					<div class="howzm-box"></div>
-					<img class="avatar" src="img/raccoon.png">
-				</li>
-				<li class="answer-roost">
-					<img class="avatar" src="img/rooster.png">
-					<div class="howzm-box"></div>
+				<li class="row">
+					<div class="rooster row">
+						<img class="avatar" src="img/rooster.png">
+						<div class="howzm-box">howzm? brah, whatchulike translate?
+						</div>
+					</div>
 				</li>
 			</ul>
 		</div>
@@ -47,7 +41,23 @@
 	<footer>
 		<p>Developed by Sam Samskies</p>
 	</footer>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
+	<script type="text/template" id="raccoonQ-template">
+		<li class="row">
+			<div class="question-rac">
+				<div class="howzm-box"></div>
+				<img class="avatar" src="img/raccoon.png">
+			</div>
+		</li>
+	</script>
+	<script type="text/template" id="roosterA-template">
+		<li class="row">
+			<div class="answer-roost">
+				<img class="avatar" src="img/rooster.png">
+				<div class="howzm-box"></div>
+			</div>
+		</li>
+	</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
