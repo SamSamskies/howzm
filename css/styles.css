@@ -105,12 +105,12 @@ h1 {
 	display: inline-block;
 	vertical-align: top;
 }
-#newRequest {
+#new-request {
 	padding: 8px;
 	border: 0;
 	resize: none;
 }
-#newRequest:focus {
+#new-request:focus {
 	box-shadow: 0;
 	border: 1px solid #65e3d3;
 	outline: none;
@@ -163,6 +163,7 @@ footer {
 	padding: 0 20px;
 	color: #3f4655;
 	font-size: 12px;
+	text-align: center;
 }
 .not-hidden {
 	display: block !important;

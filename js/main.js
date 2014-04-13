@@ -1,9 +1,18 @@
 $('#send').click(function(event) {
 	event.preventDefault();
-	console.log('sendButtonClicked');
 
+	appendUsersTextToTheDom();
+	//empty out the input box
+	$('#new-request').val('');
+});
+
+$('#translations').on("DOMSubtreeModified", function(){
+	$('.row').fadeIn();
+})
+
+function appendUsersTextToTheDom() {
 	//Get the text the user entered
-	var newQuestion = $('#newRequest').val();
+	var newQuestion = $('#new-request').val();
 
 	//Get the template 
 	var questionRac = $('#raccoonQ-template').html();
@@ -12,12 +21,7 @@ $('#send').click(function(event) {
 	var $questionRac = $(questionRac);
 	$questionRac.find('.howzm-box').text(newQuestion);
 	$('#translations').append($questionRac);
-});
-
-$('#translations').on("DOMSubtreeModified", function(){
-	console.log('test');
-	$('.row').fadeIn();
-})
+}
 
 
 
