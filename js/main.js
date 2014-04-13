@@ -1,19 +1,25 @@
-$('#send').click(sendButtonClicked);
-function sendButtonClicked (event) {
+$('#send').click(function(event) {
 	event.preventDefault();
 	console.log('sendButtonClicked');
-}
 
-// function addNewItem(event) {
-	
-// 	// Prevent page reload
-// 	event.preventDefault();
-	
-// 	// Get the text the user entered
-// 	var newRequest = $('#newRequest').val();
-	
-// 	// Add an <li> with that text to the <ul>
-// 	$('.question-rac').append('<li><div class="howzm-box">' + newRequest + '</div></li>');
-	
+	//Get the text the user entered
+	var newQuestion = $('#newRequest').val();
 
-// }
+	//Get the template 
+	var questionRac = $('#raccoonQ-template').html();
+
+	//Append the user input to DOM
+	var $questionRac = $(questionRac);
+	$questionRac.find('.howzm-box').text(newQuestion);
+	$('#translations').append($questionRac);
+});
+
+$('#translations').on("DOMSubtreeModified", function(){
+	console.log('test');
+	$('.row').fadeIn();
+})
+
+
+
+
+
