@@ -9,7 +9,8 @@ body {
 }
 #app {
 	max-width: 800px;
-	margin: 20px auto;
+	height: 700px;
+	margin: auto;
 	border-radius: 7px;
 	padding: 2px;
 	box-shadow: 0 0 5px rgba(0,0,0,.5);
@@ -18,7 +19,6 @@ body {
 .topnav {
 	background: url(../img/navbar.jpg) center top no-repeat; 
 	margin: 0;
-	height: 100px;
 	background-size: cover;
 	-webkit-border-radius: 7px;
   	-moz-border-radius: 7px;
@@ -27,6 +27,9 @@ body {
   	border-top-left-radius: 7px;
   	border-top-right-radius: 7px;
   	border: none;
+  	position: fixed;
+  	width: 800px;
+  	top: 0;
 }
 h1 {
 	margin: auto 0;
@@ -36,9 +39,12 @@ h1 {
 	letter-spacing: 5px;
 }
 .text-messaging {
-	max-width: 600px;
+	max-width: 700px;
 	margin: 0 auto;
-	padding: 60px 10px 20px 10px;
+	padding: 60px 70px 0px 70px;
+	overflow: auto;
+	height: 500px;
+	overflow-x: hidden;
 }
 .avatar {
 	width: 80px;
@@ -48,24 +54,27 @@ h1 {
 }
 .howzm-box {
 	border-radius: 5px 20px 5px;
-	/*box-shadow: 0 0 5px rgba(0,0,0,.5);*/
-	/*border: 1px solid #6fa0a5;*/
-	max-width: 200px;
+	max-width: 280px;
 	min-height: 50px;
 	display: inline-block;
 	padding: 10px;
 	background-color: white;
-	/*background-image: linear-gradient(white, #c5dee2);*/
 }
 #translations {
-	min-height: 200px;
 	list-style: none;
 	padding: 0;
+}
+.answer-roost,
+.question-rac,
+.rooster {
+	padding: 20px 0;
+}
+.rooster {
+	padding-top: 40px;
 }
 .question-rac {
 	float: right;
 	display: inline;
-	padding-bottom: 30px;
 }
 .question-rac img {
 	padding-right: 0;
@@ -87,10 +96,12 @@ h1 {
   	border-bottom-right-radius: 7px;
   	border-top-left-radius: 0;
   	border-top-right-radius: 0;
-  	border: none;	
+  	border: none;
+  	position: relative;
+  	bottom: 10px;
 }
 .inputbox {
-	position: relative;
+	position: absolute;
 	left: 50px;
 	top: 30px;
 	z-index: 1;
