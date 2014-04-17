@@ -148,7 +148,10 @@ h1 {
 	background-color: black;
 	color: #fa602a;
 }
-
+textarea:focus, 
+button:focus {
+	outline: none;
+}
 .socialicons {
 	position: relative;
 	bottom: 40px;
