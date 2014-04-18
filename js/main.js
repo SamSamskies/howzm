@@ -1,4 +1,5 @@
 $('#send').click(function(event) {
+
 	event.preventDefault();
 
 	//Get the text the user entered
@@ -11,8 +12,13 @@ $('#send').click(function(event) {
 
 	//empty out the input box
 	$('#new-request').val('');
+
+	//Get the tempate and show loading dots
+	var answerRooster = $('#roosterA-template').html();
+	$('#translations').append($(answerRooster)).fadeIn(slow);
 	
-	translate(newQuestion);
+	//Need to switch loading dots with translation
+	// translate(newQuestion);
 });
 
 $('#translations').on("DOMSubtreeModified", function(){
@@ -37,6 +43,5 @@ function translate(newQuestion) {
 		
 	})
 }
-
 
 
