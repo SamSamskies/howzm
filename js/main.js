@@ -15,7 +15,9 @@ $('#send').click(function(event) {
 
 	//Get the tempate and show loading dots
 	var answerRooster = $('#roosterA-template').html();
-	$('#translations').append($(answerRooster)).fadeIn(slow);
+
+	var loadingDots = ($(answerRooster)).appendTo('#translations').hide();
+	loadingDots.fadeIn('slow');
 	
 	//Need to switch loading dots with translation
 	// translate(newQuestion);
@@ -43,5 +45,4 @@ function translate(newQuestion) {
 		
 	})
 }
-
 
