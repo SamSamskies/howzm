@@ -5,14 +5,13 @@ $('#new-request').keyup(function(e) {
 	}
 });
 
-
 $('#send').click(function(event) {
 
 	event.preventDefault();
 
 	//Get the text the user entered
 	var newQuestion = $('#new-request').val();
-	
+
 	//Get the template 
 	var questionRac = $('#raccoonQ-template').html();
 
