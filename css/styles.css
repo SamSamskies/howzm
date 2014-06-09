@@ -159,6 +159,7 @@ button:focus {
 	outline: none;
 }
 .socialicons {
+	display: none;
 	position: relative;
 	bottom: 40px;
 	left: 590px;
@@ -255,12 +256,12 @@ footer a:hover {
 		max-width: 25em;
 	}
 	#send {
-		margin-left: 5.4em;
+		margin-left: 22.5em;
 		margin-top: 1.1em;
 	}
-	.socialicons {
+	/*.socialicons {
 		left: 25em;
-	}
+	}*/
 }
 
 /*Media Query: max-width 480 */
@@ -271,8 +272,11 @@ footer a:hover {
 	#new-request {
 		max-width: 13em;
 	}
-	.socialicons {
+	#send {
+		margin-left: 10.6em;
+	}
+	/*.socialicons {
 		bottom: 2.2em;
 		left: 15.5em;
-	}
+	}*/
 }
