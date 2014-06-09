@@ -16,12 +16,17 @@ $('#send').click(function(event) {
 	//Get the tempate and show loading dots
 	var answerRooster = $('#roosterA-template').html();
 
-	var loadingDots = ($(answerRooster)).appendTo('#translations').hide();
-	loadingDots.fadeIn('slow');
+	var loadingDots = ($(answerRooster)).appendTo('#translations');
 	
+	loadingDots.fadeIn('slow');
+	translate(newQuestion)
+
 	//Need to switch loading dots with translation
+	
 	// translate(newQuestion);
 });
+
+
 
 $('#translations').on("DOMSubtreeModified", function(){
 	$('.row').fadeIn();
@@ -39,10 +44,12 @@ function translate(newQuestion) {
 	var data = { q: newQuestion };
 
 	$.getJSON(url, data, function(res) {
-		var answerRooster = $('#roosterA-template').html();
-
-		appendUsersTextToTheDom(res.text, answerRooster);
+		setTimeout (function () {
+			$('.loading').text(res.text).fadeIn();
+		}, 3000);
+		// appendUsersTextToTheDom(res.text, answerRooster);
 		
 	})
 }
+
 
