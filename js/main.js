@@ -1,10 +1,18 @@
+$('#new-request').keyup(function(e) {
+	if (e.which == 13) {
+		e.preventDefault();
+		$('#send').trigger('click');
+	}
+});
+
+
 $('#send').click(function(event) {
 
 	event.preventDefault();
 
 	//Get the text the user entered
 	var newQuestion = $('#new-request').val();
-
+	
 	//Get the template 
 	var questionRac = $('#raccoonQ-template').html();
 
@@ -21,9 +29,6 @@ $('#send').click(function(event) {
 	loadingDots.fadeIn('slow');
 	translate(newQuestion)
 
-	//Need to switch loading dots with translation
-	
-	// translate(newQuestion);
 });
 
 
